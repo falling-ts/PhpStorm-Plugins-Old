@@ -59,6 +59,12 @@ class ActionController extends Controller
 就在这种情况背景下，我硬刚了两天 IntelliJ 和 Java，终于开发出来了一个一键式 use 类导入优雅排序。现在分享出来，给同样有这种「病」的童鞋使用。
 ```
 
+## 版本要求
+
+![Laravel](https://iocaffcdn.phphub.org/uploads/images/201905/11/27709/h3GJjX26qk.png!large)
+
+请尽量使用 2019.1.1 的 PhpStorm 版本。因为是以此版本的 php-openapi 进行开发的。其它旧版本，可能会出现兼容问题，当然可能性较小而已。
+
 ## 安装
 
 ### 插件包地址
