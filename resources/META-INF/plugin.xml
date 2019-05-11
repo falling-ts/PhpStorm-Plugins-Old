@@ -1,0 +1,45 @@
+<idea-plugin>
+  <id>com.yuanshang.PhpStorm</id>
+  <name>yuanshang's PhpStorm</name>
+  <version>1.0</version>
+  <vendor email="zgh.yuanshang@gmail.com" url="https://github.com/zgh-yuanshang/PhpStorm-Plugins">yuanshang GitHub</vendor>
+
+  <description><![CDATA[
+      yuanshang's PhpStorm 提供代码开发繁琐操作的一键式功能。<br/>
+      <br/>
+      PhpStorm 版本：2019.1.1。注意其它版本可能会有一些兼容问题。<br/>
+      插件版本：1.0。
+  ]]></description>
+
+  <change-notes><![CDATA[
+      添加 Use Format 功能：PHP 命名空间 use 导入的代码优化排序。
+  ]]></change-notes>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="173.0"/>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <!-- uncomment to enable plugin in all products
+  <depends>com.intellij.modules.lang</depends>
+  -->
+
+  <depends>com.jetbrains.php</depends>
+  <depends>com.intellij.modules.platform</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
+
+  <actions>
+    <!-- Add your actions here -->
+    <group id="Yuanshang" text="Yuanshang" description="yuanshang PhpStorm Plugins">
+      <add-to-group group-id="MainMenu" anchor="last"/>
+      <action id="com.yuanshang.PhpStorm" class="com.yuanshang.PhpStorm.UseFormat" text="Use Format"
+              description="Use Format">
+        <keyboard-shortcut keymap="$default" first-keystroke="alt F"/>
+      </action>
+    </group>
+  </actions>
+
+</idea-plugin>
