@@ -90,7 +90,7 @@ public class UseFormat extends AnAction {
         Runnable runnable = new Runnable() {
             @Override
             public void run() {
-                document.setText(head + use.toString() + foot);
+                document.setText(head + use.toString() + foot + "\n");
             }
         };
         WriteCommandAction.runWriteCommandAction(this.project, runnable);
